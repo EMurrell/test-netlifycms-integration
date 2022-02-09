@@ -5,6 +5,7 @@ import Testimonials from "../components/Testimonials.js";
 import Footer from "../components/Footer.js";
 import Meta from "../components/Meta.js";
 import Header from "../components/Header.js";
+import { attributes, react as HomeContent } from "../content/home.md";
 
 export default function Home() {
   return (

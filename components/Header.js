@@ -3,6 +3,7 @@ import DelayedFadeIn from "../animations/DelayedFadeIn";
 import Nav from "./Nav";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { attributes, react as HomeContent } from "../content/home.md";
 
 export default function Header() {
   return (
@@ -35,9 +36,8 @@ export default function Header() {
           }}
         >
           <div className="self-center p-8 border shadow-lg bg-neutral-500/50 w-max backdrop-blur-sm shadow-neutral-700/70">
-            Next Popup:
-            <br />
-            -Monday Feb 14-
+            <h1>{title}</h1>
+            <h2></h2>
           </div>
         </motion.h1>
 
@@ -64,7 +64,7 @@ export default function Header() {
         >
           <Link href={"https://linktr.ee/yugirolls"} passHref>
             <button className="absolute p-3 -mt-5 text-base font-normal tracking-wide text-white bg-orange-600 border-2 border-orange-600 shadow-lg cursor-pointer w-36 hover:text-orange-600 shadow-neutral-700/70 lg:w-44 lg:text-xl hover:bg-neutral-100 hover:shadow-inner">
-              ORDER
+              {cat.name}
             </button>
           </Link>
         </motion.div>
