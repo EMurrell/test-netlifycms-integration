@@ -6,6 +6,7 @@ import Link from "next/link";
 import { attributes, react as HomeContent } from "../content/home.md";
 
 export default function Header() {
+  let { title, cats } = attributes;
   return (
     <section
       id="Home"
@@ -64,7 +65,7 @@ export default function Header() {
         >
           <Link href={"https://linktr.ee/yugirolls"} passHref>
             <button className="absolute p-3 -mt-5 text-base font-normal tracking-wide text-white bg-orange-600 border-2 border-orange-600 shadow-lg cursor-pointer w-36 hover:text-orange-600 shadow-neutral-700/70 lg:w-44 lg:text-xl hover:bg-neutral-100 hover:shadow-inner">
-              {cat.name}
+              ORDER
             </button>
           </Link>
         </motion.div>
